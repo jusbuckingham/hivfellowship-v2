@@ -1,0 +1,14 @@
+{
+  "addressLines": [
+    "Houston Methodist",
+    "6565 Fannin Street, Houston, TX 77030"
+  ],
+  "contact": {
+    "phone": "(713) 441-0000",
+    "email": "hivfellowship@houstonmethodist.org"
+  },
+  "social": [
+    { "platform": "Facebook", "href": "https://facebook.com/hivfellowship" },
+    { "platform": "Twitter",  "href": "https://twitter.com/hivfellowship" }
+  ]
+}

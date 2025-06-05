@@ -1,0 +1,14 @@
+[
+  {
+    "name": "John Doe, MD",
+    "role": "Program Director",
+    "photo": "/images/john-doe.jpg",
+    "bio": "Dr. Doe is an infectious disease specialist with 20+ years of HIV clinical and research experience."
+  },
+  {
+    "name": "Jane Smith, RN",
+    "role": "Nurse Coordinator",
+    "photo": "/images/jane-smith.jpg",
+    "bio": "Jane oversees fellow support, coordinates clinical rotations, and ensures smooth workflow."
+  }
+]
