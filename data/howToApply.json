@@ -1,0 +1,31 @@
+{
+  "sectionTitle": "How to Apply",
+  "deadline": "The deadline to submit applications is September 15th.",
+  "eligibility": [
+    "Applicants must be US citizens or permanent residents and must be expected to have graduated from a U.S. internal medicine residency, family medicine residency, medicine/pediatrics residency, or U.S. infectious diseases fellowship program by the time they would begin the HIV Medicine fellowship.",
+    "The fellowship program runs on the academic calendar (July through June) but accommodations can be made for fellows who are on an off‐cycle schedule if needed."
+  ],
+  "requiredDocuments": [
+    {
+      "label": "Brown Lifespan HIV Fellowship Application",
+      "link": "https://brownmedicine.org/media/rise/HIV_Fellowship_Application.pdf"
+    },
+    {
+      "label": "A one‐page letter of interest addressed to Dr. Jennie Johnson, HIV Medicine Fellowship Program Director",
+      "link": null
+    },
+    {
+      "label": "The applicant’s CV",
+      "link": null
+    },
+    {
+      "label": "Two or three letters of recommendation. One must be from the program director of the applicant’s current or most recent training program",
+      "link": null
+    }
+  ],
+  "contactInfo": {
+    "email": "EDiLorenzo@lifespan.org",
+    "instructions": "The complete application can be emailed to the Program Coordinator, Elaine DiLorenzo, at EDiLorenzo@lifespan.org. If letter writers are providing letters of recommendation directly to the program, please provide their names to Elaine for tracking purposes. Applicants will be notified when their application is considered complete.",
+    "generalInquiries": "Any general inquiries about the program can be directed to the Program Coordinator, Elaine DiLorenzo, at EDiLorenzo@lifespan.org."
+  }
+}

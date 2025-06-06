@@ -1,6 +1,11 @@
 [
-  { "label": "Home",    "href": "/" },
-  { "label": "About",   "href": "/#about" },
-  { "label": "Partners","href": "/#partners" },
-  { "label": "Resources","href": "/#resources" }
+  { "label": "Overview",         "href": "/#overview" },
+  { "label": "Clinical Centers", "href": "/#clinical-centers" },
+  { "label": "Curriculum",       "href": "/#curriculum" },
+  { "label": "Unique",           "href": "/#unique" },
+  { "label": "Core Faculty",     "href": "/#core-faculty" },
+  { "label": "Fellows",          "href": "/#fellows" },
+  { "label": "Alumni",           "href": "/#alumni" },
+  { "label": "Partners",         "href": "/#partners" },
+  { "label": "How to Apply",     "href": "/#how-to-apply" }
 ]

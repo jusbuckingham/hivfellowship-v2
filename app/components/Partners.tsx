@@ -1,35 +1,38 @@
 // app/components/Partners.tsx
+import Accordion from "./Accordion";
 import partnersData from "../../data/partners.json";
-import type { Partner } from "../../types/Partner";
 
 export default function Partners() {
+  const list = Array.isArray(partnersData.partnersList) ? partnersData.partnersList : [];
+
   return (
-    <section id="partners" className="py-20 bg-primary-light">
-      <div className="container">
-        <h2 className="section-title text-4xl text-primary-dark">Our Team</h2>
-        <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {partnersData.map((p: Partner) => (
-            <div key={p.name} className="card">
-              <div className="h-56 overflow-hidden">
-                <img
-                  src={p.photo}
-                  alt={p.name}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-secondary-dark mb-2">
-                  {p.name}
-                </h3>
-                <p className="text-accent mb-4">{p.role}</p>
-                <p className="text-neutral-grayDark text-sm leading-relaxed">
-                  {p.bio}
-                </p>
-              </div>
-            </div>
+    <Accordion title={partnersData.sectionTitle || "Partners"}>
+      {list.length === 0 ? (
+        <p className="mt-4 text-base text-neutral-grayDark">No partners listed yet.</p>
+      ) : (
+        <ul className="mt-6 space-y-4">
+          {list.map((p, idx) => (
+            <li key={idx} className="space-y-1">
+              {p.organization && (
+                <p className="text-lg font-semibold text-secondary">{p.organization}</p>
+              )}
+              {p.description && (
+                <p className="text-base text-neutral-grayDark">{p.description}</p>
+              )}
+              {p.link && (
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary-dark transition-colors"
+                >
+                  {p.link}
+                </a>
+              )}
+            </li>
           ))}
-        </div>
-      </div>
-    </section>
+        </ul>
+      )}
+    </Accordion>
   );
 }

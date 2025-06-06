@@ -1,48 +1,55 @@
 // app/components/Footer.tsx
-import footerData from "../../data/footer.json";
+"use client";
 
-export default function Footer() {
+import Link from "next/link";
+import type { FooterData } from "../../types/FooterData";
+
+interface FooterProps {
+  data: FooterData;
+}
+
+export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="footer-bg text-neutral-white">
-      <div className="container grid gap-8 border-b border-neutral-gray p-8 md:grid-cols-2 lg:grid-cols-3">
-        {/* Column 1: Address */}
+    <footer className="bg-secondary-dark text-neutral-white">
+      <div className="container mx-auto px-4 py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* Address & Contact */}
         <div>
-          {footerData.addressLines.map((line, idx) => (
-            <p key={idx} className="mb-1 text-base">
+          {data.addressLines.map((line, idx) => (
+            <p key={idx} className="text-base">
               {line}
             </p>
           ))}
           <p className="mt-2 text-base">
             Phone:{" "}
             <a
-              href={`tel:${footerData.contact.phone}`}
+              href={`tel:${data.contact.phone}`}
               className="text-accent hover:underline"
             >
-              {footerData.contact.phone}
+              {data.contact.phone}
             </a>
           </p>
           <p className="text-base">
             Email:{" "}
             <a
-              href={`mailto:${footerData.contact.email}`}
+              href={`mailto:${data.contact.email}`}
               className="text-accent hover:underline"
             >
-              {footerData.contact.email}
+              {data.contact.email}
             </a>
           </p>
         </div>
 
-        {/* Column 2: Social */}
+        {/* Social Links */}
         <div>
           <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
           <ul className="flex space-x-6">
-            {footerData.social.map((s) => (
+            {data.social.map((s) => (
               <li key={s.platform}>
                 <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:text-primary-light transition-colors"
+                  className="hover:text-primary-light transition-colors"
                 >
                   {s.platform}
                 </a>
@@ -51,33 +58,33 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Column 3: (Optional) Additional Links or Copyright */}
+        {/* Quick Links (Privacy, Terms). Adjust or remove these as needed. */}
         <div>
           <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
-              <a
+              <Link
                 href="/privacy"
                 className="hover:text-primary-light transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/terms"
                 className="hover:text-primary-light transition-colors"
               >
                 Terms of Service
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="text-center text-sm py-6">
-        © {new Date().getFullYear()} Houston Methodist HIV Fellowship. All
-        rights reserved.
+      {/* Copyright Bar */}
+      <div className="text-center text-small py-4 bg-secondary text-neutral-white">
+        © {new Date().getFullYear()} HIV Fellowship. All rights reserved.
       </div>
     </footer>
   );

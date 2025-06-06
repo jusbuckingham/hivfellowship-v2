@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Variables for quick reference */
+/* CSS Variables for consistent colors (assuming you extended Tailwind) */
 :root {
   --color-primary: theme("colors.primary.DEFAULT");
   --color-primary-light: theme("colors.primary.light");
@@ -16,19 +16,17 @@
   --color-text-inverse: theme("colors.neutral.white");
 }
 
-/* Enable smooth scrolling for anchor links */
+/* Body resets */
 html {
   scroll-behavior: smooth;
 }
 
-/* Apply consistent box-sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Reset default body styles and set a base font */
 body {
   margin: 0;
   padding: 0;
@@ -53,46 +51,12 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-h1 {
-  font-size: 2.25rem; /* 36px */
-  font-weight: 700;
+h2.section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
-h2 {
-  font-size: 1.875rem; /* 30px */
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 1.5rem; /* 24px */
-  font-weight: 500;
-}
-
-/* Paragraph styling */
-p {
-  margin-bottom: 1rem;
-  color: var(--color-text-default);
-}
-
-/* Anchor link base style */
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-a:hover {
-  color: var(--color-primary-dark);
-  text-decoration: underline;
-}
-
-/* Button reset */
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
-/* Utility: Container max-width */
+/* Container utility */
 .container {
   max-width: 1100px;
   margin-left: auto;
@@ -101,33 +65,12 @@ button {
   padding-right: 1rem;
 }
 
-/* Utility: Card */
-.card {
-  background-color: var(--color-neutral-white);
-  border-radius: 0.5rem; /* 8px */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-/* Utility: Section headings */
-.section-title {
-  margin-bottom: 1.5rem;
-  color: var(--color-secondary);
-  text-align: center;
-  font-weight: 600;
-}
-
-/* Utility: Footer background */
+/* Footer background override */
 .footer-bg {
   background-color: var(--color-secondary);
 }
 
-/* Utility: Small text */
-.text-small {
-  font-size: 0.875rem; /* 14px */
-}
-
-/* Override Tailwind’s default link focus outline to a subtle accent */
+/* Override Tailwind’s link focus outline */
 a:focus {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;

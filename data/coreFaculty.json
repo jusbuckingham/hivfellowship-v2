@@ -1,0 +1,47 @@
+{
+  "sectionTitle": "Core Faculty",
+  "faculty": [
+  {
+    "name": "Jenica Ryu, MD, AAHIVS",
+    "role": "Program Director",
+    "photo": "/images/about/jenica-ryan.png",
+    "bio": "Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
+  },
+  {
+    "name": "LaShonda Spencer, MD, AAHIVS",
+    "role": "Program Director",
+    "photo": "/images/about/lashonda-spencer.jpeg",
+    "bio": "HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
+  },
+  {
+    "name": "Revery Barnes, MD, AAHIVS",
+    "role": "Associate Program Director",
+    "photo": "/images/about/revery-barnes.jpg",
+    "bio": "HIV Clinic Director, Hubert H. Humphrey Comprehensive Health Center LA County Department of Health Services"
+  },
+  {
+    "name": "Christian Takayama, MD, AAHIVS",
+    "role": "Associate Program Director",
+    "photo": "/images/about/christian-takayama.png",
+    "bio": "Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine"
+  },
+  {
+    "name": "Shanna Livermore, MPH",
+    "role": "Director of Operations",
+    "photo": "/images/about/shanna-livermore.png",
+    "bio": "Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
+  },
+  {
+    "name": "Jerry Gates, PhD",
+    "role": "Emeritus Professor of Family Medicine",
+    "photo": "/images/about/jerry-gates.png",
+    "bio": "HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
+  },
+  {
+    "name": "Katherine Loomis, MD",
+    "role": "Research & Scholarship Lead",
+    "photo": "Find better fitting pic",
+    "bio": "Clinical Instructor of Internal Medicine/ ID"
+  }
+  ]
+}

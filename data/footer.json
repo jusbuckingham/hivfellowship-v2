@@ -1,14 +1,14 @@
 {
   "addressLines": [
-    "Houston Methodist",
-    "6565 Fannin Street, Houston, TX 77030"
+    "Rhode Island Hospital",
+    "593 Eddy Street, Providence, RI 02903"
   ],
   "contact": {
-    "phone": "(713) 441-0000",
-    "email": "hivfellowship@houstonmethodist.org"
+    "phone": "(401) XXX-XXXX",
+    "email": "hivfellowship@brown.edu"
   },
   "social": [
-    { "platform": "Facebook", "href": "https://facebook.com/hivfellowship" },
-    { "platform": "Twitter",  "href": "https://twitter.com/hivfellowship" }
+    { "platform": "Facebook", "href": "https://facebook.com/ribhiv" },
+    { "platform": "Twitter",  "href": "https://twitter.com/ribhiv" }
   ]
 }
