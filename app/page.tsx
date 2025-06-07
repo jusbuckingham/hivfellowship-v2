@@ -12,12 +12,12 @@ import HowToApply from "./components/HowToApply";
 
 export default function HomePage() {
   return (
-    <main>
-      {/* Top-of-page carousel */}
+    <main className="bg-neutral-grayLight min-h-screen">
+      {/* Top‐of‐page image slider */}
       <Carousel />
 
-      {/* Collapsible Sections */}
-      <div className="container mx-auto px-4">
+      {/* Centered container for all content sections */}
+      <div className="container mx-auto px-4 pt-8 pb-16">
         <Overview />
         <ClinicalCenters />
         <Curriculum />
