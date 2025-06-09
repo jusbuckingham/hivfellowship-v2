@@ -1,44 +1,37 @@
 [
   {
-    "name": "Jenica Ryu, MD, AAHIVS",
-    "role": "Program Director",
-    "photo": "/images/about/jenica-ryan.png",
-    "bio": "​Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
+    "name": "Los Angeles County Department of Health Services",
+    "link": "https://dhs.lacounty.gov",
+    "description": "The second largest municipal health system in the nation, providing high-quality, patient-centered, cost-effective healthcare through 19 health centers, four hospitals, and community partnerships."
   },
   {
-    "name": "LaShonda Spencer, MD, AAHIVS",
-    "role": "Program Director",
-    "photo": "/images/about/lashonda-spencer.jpeg",
-    "bio": "​HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
+    "name": "Keck School of Medicine Department of Family Medicine, USC",
+    "link": "https://keck.usc.edu",
+    "description": "Developed one of the first HIV fellowship training programs in the United States in 2000, including community and academic settings experience."
   },
   {
-    "name": "Revery Barnes, MD, AAHIVS",
-    "role": "​Associate Program Director",
-    "photo": "/images/about/revery-barnes.jpg",
-    "bio": "​HIV Clinic Director, Hubert H. Humphrey Comprehensive Health Center LA County Department of Health Services"
+    "name": "Los Angeles County Sheriff’s Department",
+    "link": null,
+    "description": "Operates the largest jail system in the world and partnered on the only HIV Corrections fellowship established in 2010."
   },
   {
-    "name": "Christian Takayama, MD, AAHIVS",
-    "role": "Associate Program Director",
-    "photo": "/images/about/christian-takayama.png",
-    "bio": "​Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine"
+    "name": "Los Angeles Area AIDS Education and Training Center at USC",
+    "link": "https://keck.usc.edu/aetc",
+    "description": "Established in 1988 to educate and motivate healthcare providers in HIV counseling, diagnosis, and management, expanding to cover specialized programs including correctional and homeless HIV medicine, and PrEP."
   },
   {
-    "name": "Shanna Livermore, MPH",
-    "role": "Director of Operations",
-    "photo": "/images/about/shanna-livermore.png",
-    "bio": "​Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
+    "name": "UCLA National Clinician Scholars Program (NCSP)",
+    "link": "https://uclancsp.med.ucla.edu",
+    "description": "A post-doctoral program launched in 2016 to train physician leaders in community-based research and healthcare disparities."
   },
   {
-    "name": "Jerry Gates, PhD",
-    "role": "Emeritus Professor of Family Medicine",
-    "photo": "/images/about/jerry-gates.png",
-    "bio": "​HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
+    "name": "ViiV Healthcare",
+    "link": "https://www.viivhealthcare.com",
+    "description": "A global specialist HIV company founded by GlaxoSmithKline and Pfizer in 2009, dedicated to advancing HIV treatment and community support."
   },
   {
-    "name": "Katherine Loomis, MD",
-    "role": "Research & Scholarship Lead",
-    "photo": "Find better fitting pic",
-    "bio": "​Clinical Instructor of Internal Medicine/ ID"
+    "name": "The Lundquist Institute for Biomedical Innovation",
+    "link": "https://lundquist.org",
+    "description": "An independent non-profit biomedical research organization founded in 1952, serving as the administrative support partner for the LA County DHS Clinical Leadership Program."
   }
 ]

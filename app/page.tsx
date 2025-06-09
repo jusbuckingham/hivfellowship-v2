@@ -2,9 +2,9 @@
 import Carousel from "./components/Carousel";
 import Overview from "./components/Overview";
 import ClinicalCenters from "./components/ClinicalCenters";
-import Curriculum from "./components/Curriculum";
+import Program from "./components/Program";
 import Unique from "./components/Unique";
-import CoreFaculty from "./components/CoreFaculty";
+import Faculty from "./components/Faculty";
 import Fellows from "./components/Fellows";
 import Alumni from "./components/Alumni";
 import Partners from "./components/Partners";
@@ -20,9 +20,9 @@ export default function HomePage() {
       <div className="container mx-auto px-4 pt-8 pb-16">
         <Overview />
         <ClinicalCenters />
-        <Curriculum />
+        <Program />
         <Unique />
-        <CoreFaculty />
+        <Faculty />
         <Fellows />
         <Alumni />
         <Partners />

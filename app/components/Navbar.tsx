@@ -29,9 +29,9 @@ export default function Navbar({ menu }: NavbarProps) {
             priority
           />
           {/* If you'd like text next to the logo, uncomment below */}
-          {/* <span className="text-2xl font-semibold hover:text-primary-light">
+          <span className="text-2xl font-semibold hover:text-primary-light">
             HIV Fellowship
-          </span> */}
+          </span>
         </Link>
 
         {/* Desktop Menu Items */}
