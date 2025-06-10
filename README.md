@@ -67,11 +67,12 @@ hivfellowship-v2/
 │  │  ├─ ClinicalCenters.tsx   # “Our Clinical Centers”
 │  │  ├─ Curriculum.tsx        # “The Curriculum”
 │  │  ├─ Unique.tsx            # “What Is Unique…”
-│  │  ├─ CoreFaculty.tsx       # Faculty list
+│  │  ├─ Faculty.tsx           # Faculty list
 │  │  ├─ Fellows.tsx           # Current fellows
 │  │  ├─ Alumni.tsx            # Alumni list
 │  │  ├─ Partners.tsx          # Partner organizations
-│  │  └─ HowToApply.tsx        # Application instructions
+│  │  ├─ HowToApply.tsx        # Application instructions
+│  │  └─ Program.tsx           # Program details
 │  ├─ layout.tsx               # Root layout with Navbar & Footer
 │  └─ page.tsx                 # Renders Carousel + all sections
 ├─ data/
@@ -80,11 +81,12 @@ hivfellowship-v2/
 │  ├─ clinicalCenters.json
 │  ├─ curriculum.json
 │  ├─ unique.json
-│  ├─ coreFaculty.json
+│  ├─ faculty.json
 │  ├─ fellows.json
 │  ├─ alumni.json
 │  ├─ partners.json
-│  └─ howToApply.json
+│  ├─ howToApply.json
+│  └─ program.json
 ├─ public/
 │  └─ images/
 │     ├─ home/                 # carousel & logo images
@@ -107,11 +109,12 @@ Each **section** component reads its content from a corresponding JSON file in `
 - **Clinical Centers**: `clinicalCenters.json`  
 - **Curriculum**: `curriculum.json`  
 - **Unique**: `unique.json`  
-- **Faculty**: `coreFaculty.json`  
+- **Faculty**: `faculty.json`  
 - **Fellows**: `fellows.json`  
 - **Alumni**: `alumni.json`  
 - **Partners**: `partners.json`  
 - **How to Apply**: `howToApply.json`  
+- **Program**: `program.json`  
 - **Carousel**: `carousel.json`
 
 To update text or add entries, just modify the JSON and save — no need to touch the React code.
