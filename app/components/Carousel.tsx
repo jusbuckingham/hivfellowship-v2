@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 import carouselData from "../../data/carousel.json";
 
 export default function Carousel() {
-  // 1. Safely grab the array of image URLs
+  // Safely grab image URLs
   const images = Array.isArray(carouselData.images) ? carouselData.images : [];
   const [current, setCurrent] = useState(0);
 
-  // 2. Auto-advance every 5 seconds
+  // Auto-advance every 5 seconds
   useEffect(() => {
     if (images.length === 0) return;
     const interval = setInterval(() => {
@@ -18,18 +18,19 @@ export default function Carousel() {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // 3. If no images, render nothing (or you could render a placeholder)
-  if (images.length === 0) {
-    return null;
-  }
+  // If no images, render nothing
+  if (images.length === 0) return null;
 
   return (
-    <div className="relative w-full overflow-hidden">
-      {/* Slide as a background-image with fixed height */}
-      <div
-        className="w-full h-64 md:h-96 bg-center bg-cover transition-opacity duration-500"
-        style={{ backgroundImage: `url("${images[current]}")` }}
-      />
+    <div className="relative w-full max-w-screen-lg mx-auto">
+      {/* Slide container with fixed height, flex centering, and uniform background */}
+      <div className="w-full h-32 md:h-48 lg:h-56 flex items-center justify-center bg-neutral-grayLight">
+        <img
+          src={images[current]}
+          alt={`Slide ${current + 1}`}
+          className="max-w-full max-h-full object-contain"
+        />
+      </div>
 
       {/* Prev button */}
       <button

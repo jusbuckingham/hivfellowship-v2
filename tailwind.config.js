@@ -8,29 +8,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // “Brown Medicine”–inspired palette
         primary: {
-          light: "#F5F2ED",  // pale beige
-          DEFAULT: "#A65E2E", // rich terracotta / brown‐red
-          dark: "#6D3F25",   // deep espresso brown
+          DEFAULT: "#C82333", // deep red
+          light: "#E04858",   // hover
+          dark: "#A01F29"     // active
         },
         secondary: {
-          light: "#EDE7E2",  // off‐white / light sand
-          DEFAULT: "#776A5E", // muted taupe
-          dark: "#3D332D",   // charcoal brown
+          DEFAULT: "#333333", // main text
+          light: "#4A4A4A",
+          dark: "#1A1A1A"
         },
         accent: {
-          light: "#D8C7B9",  // cream
-          DEFAULT: "#B49274", // camel
-          dark: "#8C6F53",   // deep camel
+          DEFAULT: "#FFD100", // gold
+          light: "#FFE040",
+          dark: "#CCAA00"
         },
         neutral: {
+          background: "#F2F2F2", // page bg
           white: "#FFFFFF",
-          black: "#000000",
-          grayLight: "#F9F9F9",
-          gray: "#CCCCCC",
-          grayDark: "#555555",
-        },
+          black: "#000000"
+        }
       },
       fontFamily: {
         // Choose an elegant, modern sans‐serif (e.g. Inter, Helvetica Neue, etc.)

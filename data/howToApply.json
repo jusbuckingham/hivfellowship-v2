@@ -2,30 +2,30 @@
   "sectionTitle": "How to Apply",
   "deadline": "Applications are due by September 15.",
   "eligibility": [
-    "Applicants must be U.S. citizens or permanent residents and are expected to have completed a U.S. internal medicine, family medicine, medicine–pediatrics, or infectious diseases fellowship prior to the start of the program.",
-    "The fellowship runs on a July–June academic calendar; off-cycle start dates may be accommodated on a case-by-case basis."
+    "U.S. citizen or permanent resident",
+    "Completed internal medicine, family medicine, med-peds, or infectious diseases fellowship before start (July–June)"
   ],
   "requiredDocuments": [
     {
-      "label": "Completed HIV Clinical Leadership Fellowship Program Application",
+      "label": "HIV Clinical Leadership Fellowship Application Form",
       "link": "https://docs.google.com/forms/d/1GMSQXZOlZGOeIpS9x5HphmJvW1ysE100_v8grsacItw/viewform?edit_requested=true"
     },
     {
-      "label": "One-page letter of interest addressed to Shanna Livermore, Program Director",
+      "label": "One-page letter of interest to Shanna Livermore, Program Director",
       "link": null
     },
     {
-      "label": "Curriculum Vitae",
+      "label": "Curriculum Vitae (CV)",
       "link": null
     },
     {
-      "label": "Two or three letters of recommendation (at least one must be from your current or most recent training program director)",
+      "label": "2–3 Letters of Recommendation (one must be from your program director)",
       "link": null
     }
   ],
   "contactInfo": {
     "email": "shanna.livermore@med.usc.edu",
-    "instructions": "Please email your complete application packet to Program Coordinator Shanna Livermore at shanna.livermore@med.usc.edu. If recommenders submit letters directly, please ask them to include the applicant’s name in their email subject line for tracking.",
-    "generalInquiries": "For any general questions about the fellowship, contact Shanna Livermore at shanna.livermore@med.usc.edu."
+    "instructions": "Email your complete application package to Shanna Livermore at shanna.livermore@med.usc.edu. If recommenders send letters directly, please CC the applicant’s name.",
+    "generalInquiries": "For questions, contact Shanna Livermore at shanna.livermore@med.usc.edu."
   }
 }

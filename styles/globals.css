@@ -4,16 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Variables for consistent colors (assuming you extended Tailwind) */
+/* CSS Variables for consistent colors (updated to match original palette) */
 :root {
-  --color-primary: theme("colors.primary.DEFAULT");
-  --color-primary-light: theme("colors.primary.light");
-  --color-primary-dark: theme("colors.primary.dark");
-  --color-secondary: theme("colors.secondary.DEFAULT");
-  --color-accent: theme("colors.accent.DEFAULT");
-  --color-background: theme("colors.neutral.grayLight");
-  --color-text-default: theme("colors.neutral.grayDark");
-  --color-text-inverse: theme("colors.neutral.white");
+  /* Primary (deep red) */
+  --color-primary: #C82333;
+  --color-primary-light: #E04858;
+  --color-primary-dark: #A01F29;
+
+  /* Secondary (text color) */
+  --color-secondary: #333333;
+
+  /* Accent (gold) */
+  --color-accent: #FFD100;
+
+  /* Background */
+  --color-background: #F2F2F2;
+
+  /* Text default and inverse */
+  --color-text-default: #333333;
+  --color-text-inverse: #FFFFFF;
 }
 
 /* Body resets */

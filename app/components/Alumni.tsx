@@ -29,9 +29,9 @@ export default function Alumni() {
                         <Image
                           src={a.photo}
                           alt={a.name}
-                          fill
-                          style={{ objectFit: "cover" }}
-                          className="rounded-full"
+                          width={64}
+                          height={64}
+                          className="rounded-full object-cover"
                           priority
                         />
                       </div>

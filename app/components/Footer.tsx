@@ -10,29 +10,29 @@ interface FooterProps {
 
 export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="bg-secondary-dark text-neutral-white">
-      <div className="container mx-auto px-4 py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <footer className="bg-neutral-background text-secondary">
+      <div className="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
         {/* Address & Contact */}
-        <div>
+        <div className="space-y-1">
           {data.addressLines.map((line, idx) => (
             <p key={idx} className="text-base">
               {line}
             </p>
           ))}
           <p className="mt-2 text-base">
-            Phone:{" "}
+            <span className="font-semibold">Phone:</span>{" "}
             <a
               href={`tel:${data.contact.phone}`}
-              className="text-accent hover:underline"
+              className="text-primary hover:underline"
             >
               {data.contact.phone}
             </a>
           </p>
           <p className="text-base">
-            Email:{" "}
+            <span className="font-semibold">Email:</span>{" "}
             <a
               href={`mailto:${data.contact.email}`}
-              className="text-accent hover:underline"
+              className="text-primary hover:underline"
             >
               {data.contact.email}
             </a>
@@ -40,16 +40,16 @@ export default function Footer({ data }: FooterProps) {
         </div>
 
         {/* Social Links */}
-        <div>
-          <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
-          <ul className="flex space-x-6">
+        <div className="space-y-2">
+          <h4 className="text-lg font-semibold">Follow Us</h4>
+          <ul className="flex space-x-4">
             {data.social.map((s) => (
               <li key={s.platform}>
                 <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary-light transition-colors"
+                  className="text-secondary hover:text-primary transition-colors"
                 >
                   {s.platform}
                 </a>
@@ -58,23 +58,17 @@ export default function Footer({ data }: FooterProps) {
           </ul>
         </div>
 
-        {/* Quick Links (Privacy, Terms). Adjust or remove these as needed. */}
-        <div>
-          <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2">
+        {/* Quick Links */}
+        <div className="space-y-2">
+          <h4 className="text-lg font-semibold">Quick Links</h4>
+          <ul className="space-y-1">
             <li>
-              <Link
-                href="/privacy"
-                className="hover:text-primary-light transition-colors"
-              >
+              <Link href="/privacy" className="hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link
-                href="/terms"
-                className="hover:text-primary-light transition-colors"
-              >
+              <Link href="/terms" className="hover:text-primary transition-colors">
                 Terms of Service
               </Link>
             </li>
@@ -82,8 +76,8 @@ export default function Footer({ data }: FooterProps) {
         </div>
       </div>
 
-      {/* Copyright Bar */}
-      <div className="text-center text-small py-4 bg-secondary text-neutral-white">
+      {/* Bottom Bar */}
+      <div className="border-t border-neutral-grayLight text-center py-4 text-sm text-secondary-light">
         © {new Date().getFullYear()} HIV Fellowship. All rights reserved.
       </div>
     </footer>

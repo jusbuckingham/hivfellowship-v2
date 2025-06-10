@@ -2,64 +2,39 @@
   "sectionTitle": "Fellows",
   "fellowsList": [
     {
-      "name": "",
-      "background": "",
-      "year": ""
+      "name": "Kenya Bingham-Psalms, MD",
+      "pronouns": "She/Her",
+      "year": 2026,
+      "background": "Growing up in a military family, Dr. Bingham-Psalms' upbringing was enriched with cultural diversity. She is bilingual in English and Spanish, a passion she pursued from a young age. As a first-generation college graduate, she earned a B.A. in Spanish Language & Literature from the University of California, Berkeley, and was among the first U.S. graduates from the Latin American School of Medicine in Havana, Cuba. After medical school, she supported her family while studying for the USMLEs and completed her Family Medicine residency in rural Pennsylvania, all while raising three children. She shares her journey to inspire others to achieve their dreams, even through unconventional paths. She is now excited to further her medical expertise in HIV medicine, with special interests in medical missions, global health, healthcare disparities, and women’s health. Her research interests include healthcare disparities in HIV, HIV prevention, awareness, and education.",
+      "photo": "/images/fellows/kenya-bingham-psalms.jpg"
     },
     {
-      "name": "",
-      "background": "",
-      "year": ""
+      "name": "Zac Badii, MD",
+      "pronouns": "He/Him",
+      "year": 2026,
+      "background": "Dr. Badii, a native of San Diego, California, was raised by immigrant parents and is passionately committed to addressing sex disparities in HIV prevention and treatment. As a fluent Spanish speaker with experience living, working, and studying on both sides of the southern border, Dr. Badii brings a unique perspective to the field. Having graduated from the Family Medicine program at the University of Southern California, Dr. Badii is dedicated to providing holistic and comprehensive care. This commitment extends to addressing social determinants of health through evidence-based public health interventions, reflecting a deep understanding of the multifaceted nature of healthcare and a desire to make a positive impact. Research interests include identifying and addressing bias in medical school and residency HIV curriculums and mitigating sex disparities in HIV prevention and treatment strategies.",
+      "photo": "/images/fellows/zac-badii.jpg"
     },
     {
-      "name": "",
-      "background": "",
-      "year": ""
+      "name": "Licho Aguilera, MD",
+      "pronouns": "He/They",
+      "year": 2025,
+      "background": "Dr. Licho Aguilera is a Nawat and non-binary physician from Pico-Union, Los Angeles. They are a proud graduate of the Escuela Latinoamericana de Medicina in Havana, Cuba and completed their internal medicine residency at Cedars-Sinai Medical Center. They are now a certified HIV Specialist and are completing the HIV Clinical Leadership Program at Los Angeles General Medical Center. Their career focus is on decolonial medicine for Black and Indigenous communities of Los Angeles. They are also an accomplished watercolor artist and competitive chess player.",
+      "photo": "/images/fellows/licho-aguilera.jpg"
     },
     {
-      "name": "",
-      "background": "",
-      "year": ""
+      "name": "Bianca Hill, MD, MPH",
+      "pronouns": "She/Her",
+      "year": 2025,
+      "background": "Dr. Bianca Hill grew up in New York City, where she majored in Biology at the City College of New York. She has an MPH degree in Epidemiology from SUNY Downstate Medical Center, where she discovered her passion for HIV care while completing an internship on Rikers Island. Dr. Hill completed her medical education at Meharry Medical College and Family Medicine training at the Institute for Family Health - Harlem Residency. During her residency she managed the care of patients living with HIV throughout the Bronx and Harlem, NY. Dr. Hill has been published for her PrEP research and served as a RAMP and Alumni Scholar for the HIV Vaccine Trial Network (HVTN). She has a strong interest in HIV primary care and research, primary care for all incarcerated women of color, health equity, and advocacy.",
+      "photo": "/images/fellows/bianca-hill.jpg"
     },
     {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
-    },
-    {
-      "name": "",
-      "background": "",
-      "year": ""
+      "name": "Mark Lieber, MD",
+      "pronouns": "He/Him",
+      "year": 2025,
+      "background": "Dr. Mark Lieber is originally from Tampa, Florida and completed his undergraduate studies at Stanford, where he majored in Film Studies and Human Biology. After college, he worked as an Associate Producer for National Geographic Television on a documentary series about prisons called \"Lockdown\", which initially piqued his interest in HIV medicine. He subsequently worked in Malawi for a year with Partners In Health as a health systems coordinator in a region heavily impacted by the HIV/AIDS epidemic. After returning to the U.S., he completed medical school at the University of California, Irvine and internal medicine residency at Johns Hopkins Bayview Medical Center in Baltimore, Maryland. He plans to focus his medical career on HIV and LGBTQ+ primary care.",
+      "photo": "/images/fellows/mark-lieber.jpg"
     }
   ]
 }

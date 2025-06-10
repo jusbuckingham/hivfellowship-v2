@@ -2,6 +2,7 @@
 "use client";
 
 import Accordion from "./Accordion";
+import Image from "next/image";
 import partnersData from "../../data/partners.json";
 
 export default function Partners() {
@@ -17,6 +18,18 @@ export default function Partners() {
         <ul className="mt-6 space-y-4">
           {list.map((p, idx) => (
             <li key={idx} className="space-y-1">
+              {p.logo && (
+                <div className="w-16 h-16 relative mb-2">
+                  <Image
+                    src={p.logo}
+                    alt={`${p.name} logo`}
+                    width={64}
+                    height={64}
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              )}
               <p className="text-lg font-semibold text-secondary">
                 {p.name}
               </p>

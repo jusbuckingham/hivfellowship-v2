@@ -3,7 +3,7 @@
 
 import Accordion from "./Accordion";
 import Image from "next/image";
-import facultyData from "../../data/Faculty.json";
+import facultyData from "../../data/faculty.json";
 
 export default function Faculty() {
   return (
@@ -22,8 +22,9 @@ export default function Faculty() {
                     <Image
                       src={f.photo}
                       alt={f.name}
-                      fill
-                      style={{ objectFit: "cover" }}
+                      width={64}
+                      height={64}
+                      className="rounded-full object-cover"
                       priority
                     />
                   </div>
@@ -57,8 +58,9 @@ export default function Faculty() {
                     <Image
                       src={f.photo}
                       alt={f.name}
-                      fill
-                      style={{ objectFit: "cover" }}
+                      width={64}
+                      height={64}
+                      className="rounded-full object-cover"
                       priority
                     />
                   </div>

@@ -5,11 +5,12 @@ import clinicalData from "../../data/clinicalCenters.json";
 export default function ClinicalCenters() {
   return (
     <Accordion title={clinicalData.sectionTitle}>
-      <div className="space-y-4 text-lg text-neutral-grayDark leading-relaxed">
-        {clinicalData.paragraphs.map((para, idx) => (
-          <p key={idx}>{para}</p>
-        ))}
-      </div>
+      <ul className="list-disc list-inside space-y-2 text-lg text-neutral-grayDark leading-relaxed">
+        {Array.isArray(clinicalData.bullets) &&
+          clinicalData.bullets.map((item, idx) => (
+            <li key={idx}>{item}</li>
+          ))}
+      </ul>
     </Accordion>
   );
 }

@@ -7,7 +7,7 @@ export default function Overview() {
       <div className="container mx-auto px-4 space-y-6">
         {/* Header */}
         <h2 className="section-title text-3xl md:text-4xl text-secondary">
-          {overviewData.headers[0]}
+          {overviewData.sectionTitle}
         </h2>
 
         {/* About the Program paragraphs */}
