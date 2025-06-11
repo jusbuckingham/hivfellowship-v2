@@ -8,7 +8,7 @@ import facultyData from "../../data/faculty.json";
 export default function Faculty() {
   return (
     <Accordion title={facultyData.sectionTitle}>
-      <div className="space-y-12">
+      <div className="px-6 space-y-12">
         {/* Leadership Team */}
         <div>
           <h3 className="text-2xl font-semibold text-secondary mb-4">
@@ -16,9 +16,9 @@ export default function Faculty() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {facultyData.leadershipTeam.map((f, idx) => (
-              <div key={idx} className="flex space-x-4 items-start">
+              <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
                 {f.photo && (
-                  <div className="flex-shrink-0 w-16 h-16 relative rounded-full overflow-hidden">
+                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-2">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -29,7 +29,7 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <div className="space-y-1">
+                <div className="space-y-2">
                   <p className="text-lg font-semibold text-secondary">
                     {f.name}
                   </p>
@@ -52,9 +52,9 @@ export default function Faculty() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {facultyData.clinicalTeam.map((f, idx) => (
-              <div key={idx} className="flex space-x-4 items-start">
+              <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
                 {f.photo && (
-                  <div className="flex-shrink-0 w-16 h-16 relative rounded-full overflow-hidden">
+                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-2">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -65,7 +65,7 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <div className="space-y-1">
+                <div className="space-y-2">
                   <p className="text-lg font-semibold text-secondary">
                     {f.name}
                   </p>

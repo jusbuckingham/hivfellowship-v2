@@ -15,15 +15,18 @@ export default function Alumni() {
           No alumni listed yet.
         </p>
       ) : (
-        <div className="space-y-12">
+        <div>
           {cohorts.map((cohort) => (
             <div key={cohort.year}>
               <h3 className="text-2xl font-semibold text-secondary mb-4">
                 Class of {cohort.year}
               </h3>
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {cohort.alumni.map((a, idx) => (
-                  <div key={idx} className="flex flex-col items-center space-y-2 text-center">
+                  <div
+                    key={idx}
+                    className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center space-y-4 text-center"
+                  >
                     {a.photo && (
                       <div className="w-24 h-24 relative rounded-full overflow-hidden mx-auto">
                         <Image
@@ -36,28 +39,18 @@ export default function Alumni() {
                         />
                       </div>
                     )}
-                    <p className="text-lg font-semibold text-secondary">
-                      {a.name}
-                    </p>
+                    <p className="text-lg font-semibold text-secondary">{a.name}</p>
                     {a.title && (
-                      <p className="italic text-base text-neutral-grayDark">
-                        {a.title}
-                      </p>
+                      <p className="italic text-base text-neutral-grayDark">{a.title}</p>
                     )}
                     {a.institution && (
-                      <p className="text-base text-neutral-grayDark">
-                        {a.institution}
-                      </p>
+                      <p className="text-base text-neutral-grayDark">{a.institution}</p>
                     )}
                     {a.location && (
-                      <p className="text-base text-neutral-grayDark">
-                        {a.location}
-                      </p>
+                      <p className="text-base text-neutral-grayDark">{a.location}</p>
                     )}
                     {a.pronouns && (
-                      <p className="text-base text-neutral-grayDark">
-                        {a.pronouns}
-                      </p>
+                      <p className="text-base text-neutral-grayDark">{a.pronouns}</p>
                     )}
                     {a.link && (
                       <a

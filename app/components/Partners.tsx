@@ -15,22 +15,22 @@ export default function Partners() {
           No partners listed yet.
         </p>
       ) : (
-        <ul className="mt-6 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 px-6">
           {list.map((p, idx) => (
-            <li key={idx} className="space-y-1">
+            <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center space-y-4 text-center">
               {p.logo && (
-                <div className="w-16 h-16 relative mb-2">
+                <div className="w-20 h-20 relative rounded-full overflow-hidden">
                   <Image
                     src={p.logo}
                     alt={`${p.name} logo`}
-                    width={64}
-                    height={64}
+                    width={96}
+                    height={96}
                     className="object-contain"
                     priority
                   />
                 </div>
               )}
-              <p className="text-lg font-semibold text-secondary">
+              <p className="text-lg font-semibold text-secondary hover:text-primary transition-colors">
                 {p.name}
               </p>
               <p className="text-base text-neutral-grayDark">
@@ -46,9 +46,9 @@ export default function Partners() {
                   {p.link}
                 </a>
               )}
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </Accordion>
   );

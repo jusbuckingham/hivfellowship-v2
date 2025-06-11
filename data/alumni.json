@@ -11,7 +11,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "They/Them",
           "link": "",
-          "photo": "/images/alumni/johan-clarke.jpg"
+          "photo": "/images/faculty/clinical-team/johan-clarke.png"
         },
         {
           "name": "Jessica Farmer, MD",
@@ -34,7 +34,7 @@
           "location": "Detroit, MI",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/earl-gerald-carlos.jpg"
+          "photo": "/images/alumni/earl-gerald.jpeg"
         },
         {
           "name": "Rebecca Lee, DO, AAHIVS",
@@ -43,7 +43,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/rebecca-lee.jpg"
+          "photo": "/images/alumni/rebecca-lee.jpeg"
         },
         {
           "name": "Oliver Refugio, MD, MPH, AAHIVS",
@@ -52,7 +52,7 @@
           "location": "Lancaster, CA",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/oliver-refugio.jpg"
+          "photo": "/images/alumni/oliver-refugio.jpeg"
         }
       ]
     },
@@ -66,7 +66,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/tri-trang.jpg"
+          "photo": "/images/alumni/tri-trang.jpeg"
         },
         {
           "name": "Jonathan Kao, MD, AAHIVS",
@@ -75,7 +75,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/jonathan-kao.jpg"
+          "photo": "/images/alumni/jonathan-koa.jpeg"
         }
       ]
     },
@@ -89,7 +89,7 @@
           "location": "Orlando, FL",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/emma-allseits.jpg"
+          "photo": "/images/alumni/emma-allseits.jpeg"
         }
       ]
     },
@@ -103,7 +103,7 @@
           "location": "",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/kevin-tangonan.jpg"
+          "photo": "/images/faculty/clinical-team/kevin-tangonan.jpg"
         },
         {
           "name": "Jessica Schneider, MD, AAHIVS",
@@ -112,7 +112,7 @@
           "location": "",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/jessica-schneider.jpg"
+          "photo": "/images/faculty/clinical-team/jessica-schneider.jpeg"
         },
         {
           "name": "Norris Tran Duc, MD, AAHIVS",
@@ -121,7 +121,7 @@
           "location": "",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/norris-tran-duc.jpg"
+          "photo": "/images/alumni/norris-tran-duc.jpeg"
         },
         {
           "name": "Michael Stefanowicz, MD, AAHIVS",
@@ -130,7 +130,7 @@
           "location": "Austin, TX",
           "pronouns": "He/Him",
           "link": "https://www.aahivm.org/michael-stefanowicz/",
-          "photo": "/images/alumni/michael-stefanowicz.jpg"
+          "photo": "/images/alumni/michael-stefanowicz.jpeg"
         }
       ]
     },
@@ -144,7 +144,7 @@
           "location": "New Orleans, LA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/jolie-leblanc.jpg"
+          "photo": "/images/alumni/jolie-leblanc.jpeg"
         },
         {
           "name": "Rafael Chiquillo-Sosa, MD, AAHIVS",
@@ -153,7 +153,7 @@
           "location": "Oakland, CA",
           "pronouns": "He/Him",
           "link": "",
-          "photo": "/images/alumni/rafael-chiquillo-sosa.jpg"
+          "photo": "/images/alumni/rafael-chiquillo-sosa.jpeg"
         },
         {
           "name": "Summer Drake, DO, AAHIVS",
@@ -162,7 +162,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/summer-drake.jpg"
+          "photo": "/images/alumni/summer-drake.jpeg"
         }
       ]
     },
@@ -176,7 +176,7 @@
           "location": "Los Angeles, CA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/becca-cohen.jpg"
+          "photo": "/images/faculty/clinical-team/becca-cohen.jpg"
         },
         {
           "name": "Lauren Wolchok, MD, AAHIVS",
@@ -185,16 +185,16 @@
           "location": "Pasadena, CA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/lauren-wolchok.jpg"
+          "photo": "/images/alumni/lauren-wolchok.jpeg"
         },
         {
           "name": "Revery Barnes, MD, AAHIVS",
           "title": "HIV Clinic Director; Associate Program Director",
           "institution": "South LA Health Center Group, LA County DHS",
-          "location": "Pasadena, CA",
+          "location": "Los Angeles, CA",
           "pronouns": "She/Her",
           "link": "",
-          "photo": "/images/alumni/revery-barnes.jpg"
+          "photo": "/images/faculty/leadership-team/revery-barnes.jpg"
         }
       ]
     }

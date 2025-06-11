@@ -13,9 +13,9 @@ export default function Fellows() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
           {list.map((fellow, idx) => (
-            <div key={idx} className="flex flex-col items-center space-y-2 text-center">
+            <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
               {fellow.photo && (
-                <div className="w-24 h-24 relative rounded-full overflow-hidden mx-auto">
+                <div className="w-20 h-20 relative rounded-full overflow-hidden mx-auto">
                   <Image
                     src={fellow.photo}
                     alt={fellow.name}
@@ -27,8 +27,11 @@ export default function Fellows() {
                 </div>
               )}
               <p className="text-lg font-semibold text-secondary">{fellow.name}</p>
-              <p className="text-base text-neutral-grayDark">{fellow.background}</p>
-              <p className="text-base text-neutral-grayDark">Year: {fellow.year}</p>
+              {fellow.pronouns && (
+                <p className="text-sm text-neutral-grayDark">{fellow.pronouns}</p>
+              )}
+              <p className="text-sm text-neutral-grayDark leading-relaxed">{fellow.background}</p>
+              <p className="text-sm text-secondary-light">Year: {fellow.year}</p>
             </div>
           ))}
         </div>

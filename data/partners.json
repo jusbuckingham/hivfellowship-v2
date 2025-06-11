@@ -2,36 +2,43 @@
   {
     "name": "Los Angeles County Department of Health Services",
     "link": "https://dhs.lacounty.gov",
+    "logo": "/images/partners/health-services-lac.png",
     "description": "The second largest municipal health system in the nation, providing high-quality, patient-centered, cost-effective healthcare through 19 health centers, four hospitals, and community partnerships."
   },
   {
     "name": "Keck School of Medicine Department of Family Medicine, USC",
     "link": "https://keck.usc.edu",
+    "logo": "/images/partners/kecklogo.jpeg",
     "description": "Developed one of the first HIV fellowship training programs in the United States in 2000, including community and academic settings experience."
   },
   {
     "name": "Los Angeles County Sheriff’s Department",
     "link": null,
+    "logo": "/images/partners/la-sheriff.png",
     "description": "Operates the largest jail system in the world and partnered on the only HIV Corrections fellowship established in 2010."
   },
   {
     "name": "Los Angeles Area AIDS Education and Training Center at USC",
     "link": "https://keck.usc.edu/aetc",
+    "logo": "/images/partners/aetc-pacific.jpg",
     "description": "Established in 1988 to educate and motivate healthcare providers in HIV counseling, diagnosis, and management, expanding to cover specialized programs including correctional and homeless HIV medicine, and PrEP."
   },
   {
     "name": "UCLA National Clinician Scholars Program (NCSP)",
     "link": "https://uclancsp.med.ucla.edu",
+    "logo": "/images/partners/ucla-ncsp.png",
     "description": "A post-doctoral program launched in 2016 to train physician leaders in community-based research and healthcare disparities."
   },
   {
     "name": "ViiV Healthcare",
     "link": "https://www.viivhealthcare.com",
+    "logo": "/images/partners/viivlogo.png",
     "description": "A global specialist HIV company founded by GlaxoSmithKline and Pfizer in 2009, dedicated to advancing HIV treatment and community support."
   },
   {
     "name": "The Lundquist Institute for Biomedical Innovation",
     "link": "https://lundquist.org",
+    "logo": "/images/partners/lundquist.png",
     "description": "An independent non-profit biomedical research organization founded in 1952, serving as the administrative support partner for the LA County DHS Clinical Leadership Program."
   }
 ]

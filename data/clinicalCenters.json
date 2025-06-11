@@ -1,11 +1,11 @@
 {
-  "sectionTitle": "Our Clinical Centers",
+  "sectionTitle": "Our Clinical Sites",
   "bullets": [
-    "16,600 sq. ft. Infectious Diseases & Immunology Center providing HIV care to over 2,000 patients annually",
-    "Ryan White HIV Care Program serving >90% of PWH in Rhode Island with 20+ HIV faculty, APPs, and clinical pharmacists",
-    "Multidisciplinary team including social workers, case managers, nurses, nutritionists, and behavioral health specialists",
-    "Primary site for Providence/Boston Center for AIDS Research and Miriam Hospital Clinical Trials Unit",
-    "RISE TB Clinic offering adult and pediatric TB treatment, latent TB management, and directly observed therapy",
-    "Close collaboration with Rhode Island Department of Health for contact investigations and refugee/immigrant TB evaluations"
+    "Rand Schrader Health & Research Center: Ryan White–funded HIV primary care and specialty clinics",
+    "LA County+USC Medical Center: inpatient ID consults, Early Intervention HIV clinic, ED HIV consult service, jail clinic",
+    "Hubert H. Humphrey Comprehensive Health Center: outpatient HIV care within LA safety-net system",
+    "Street Medicine Clinic: mobile outreach offering HIV testing and rapid ART initiation",
+    "USC Family Medicine Clinics: continuity clinics and community health rotations",
+    "Subspecialty Rotations: addiction medicine, transplant ID, women's health HIV clinic, pediatric HIV, hepatitis C treatment"
   ]
 }

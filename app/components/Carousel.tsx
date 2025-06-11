@@ -22,7 +22,7 @@ export default function Carousel() {
   if (images.length === 0) return null;
 
   return (
-    <div className="relative w-full max-w-screen-lg mx-auto">
+    <div className="relative z-0 w-full max-w-screen-lg mx-auto mb-8">
       {/* Slide container with fixed height, flex centering, and uniform background */}
       <div className="w-full h-32 md:h-48 lg:h-56 flex items-center justify-center bg-neutral-grayLight">
         <img
