@@ -21,7 +21,7 @@ export default function Navbar({ menu }: NavbarProps) {
         <Link href="/" className="flex items-center space-x-2">
           {/* Explicit 32×32px dimensions via width/height */}
           <Image
-            src="/images/home/hiv-logo.jpg"
+            src="/images/menu/hiv-logo.jpg"
             alt="HIV Fellowship Logo"
             width={32}
             height={32}
