@@ -15,11 +15,14 @@ export default function Partners() {
           No partners listed yet.
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4 md:px-6">
           {list.map((p, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center space-y-4 text-center">
+            <div
+              key={idx}
+              className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center max-w-xs mx-auto space-y-2 hover:shadow-lg transform transition-transform duration-200"
+            >
               {p.logo && (
-                <div className="w-20 h-20 relative rounded-full overflow-hidden">
+                <div className="w-24 h-24 relative overflow-hidden mb-4">
                   <Image
                     src={p.logo}
                     alt={`${p.name} logo`}
@@ -30,10 +33,10 @@ export default function Partners() {
                   />
                 </div>
               )}
-              <p className="text-lg font-semibold text-secondary hover:text-primary transition-colors">
+              <p className="text-xl font-semibold text-secondary mb-1">
                 {p.name}
               </p>
-              <p className="text-base text-neutral-grayDark">
+              <p className="text-sm text-neutral-grayDark leading-relaxed mb-2">
                 {p.description}
               </p>
               {p.link && (
@@ -41,7 +44,7 @@ export default function Partners() {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:text-primary-dark transition-colors"
+                  className="text-primary text-sm hover:underline transition"
                 >
                   {p.link}
                 </a>

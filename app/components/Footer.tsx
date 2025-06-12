@@ -10,7 +10,7 @@ interface FooterProps {
 
 export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="bg-neutral-background text-secondary">
+    <footer className="bg-secondary text-neutral-white">
       <div className="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
         {/* Address & Contact */}
         <div className="space-y-1">
@@ -23,7 +23,7 @@ export default function Footer({ data }: FooterProps) {
             <span className="font-semibold">Phone:</span>{" "}
             <a
               href={`tel:${data.contact.phone}`}
-              className="text-primary hover:underline"
+              className="text-accent hover:underline"
             >
               {data.contact.phone}
             </a>
@@ -32,7 +32,7 @@ export default function Footer({ data }: FooterProps) {
             <span className="font-semibold">Email:</span>{" "}
             <a
               href={`mailto:${data.contact.email}`}
-              className="text-primary hover:underline"
+              className="text-accent hover:underline"
             >
               {data.contact.email}
             </a>
@@ -49,7 +49,7 @@ export default function Footer({ data }: FooterProps) {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary hover:text-primary transition-colors"
+                  className="text-neutral-white hover:text-accent transition-colors"
                 >
                   {s.platform}
                 </a>
@@ -63,12 +63,12 @@ export default function Footer({ data }: FooterProps) {
           <h4 className="text-lg font-semibold">Quick Links</h4>
           <ul className="space-y-1">
             <li>
-              <Link href="/privacy" className="hover:text-primary transition-colors">
+              <Link href="/privacy" className="text-neutral-white hover:text-accent transition-colors">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="hover:text-primary transition-colors">
+              <Link href="/terms" className="text-neutral-white hover:text-accent transition-colors">
                 Terms of Service
               </Link>
             </li>
@@ -77,7 +77,7 @@ export default function Footer({ data }: FooterProps) {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-neutral-grayLight text-center py-4 text-sm text-secondary-light">
+      <div className="border-t border-neutral-gray text-center py-4 text-sm text-neutral-grayDark">
         © {new Date().getFullYear()} HIV Fellowship. All rights reserved.
       </div>
     </footer>

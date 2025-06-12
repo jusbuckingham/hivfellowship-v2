@@ -14,11 +14,14 @@ export default function Faculty() {
           <h3 className="text-2xl font-semibold text-secondary mb-4">
             Leadership Team
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
             {facultyData.leadershipTeam.map((f, idx) => (
-              <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
+              <div
+                key={idx}
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center max-w-xs"
+              >
                 {f.photo && (
-                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-2">
+                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-4">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -29,17 +32,12 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <div className="space-y-2">
-                  <p className="text-lg font-semibold text-secondary">
-                    {f.name}
-                  </p>
-                  <p className="italic text-base text-neutral-grayDark">
-                    {f.role}
-                  </p>
-                  <p className="text-base text-neutral-grayDark">
-                    {f.bio}
-                  </p>
-                </div>
+                <p className="text-xl font-semibold text-secondary mb-1">{f.name}</p>
+                <p className="text-base font-medium text-secondary mb-3">{f.role}</p>
+                <p className="text-base text-neutral-grayDark leading-relaxed mb-3">{f.bio}</p>
+                {f.pronouns && (
+                  <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
+                )}
               </div>
             ))}
           </div>
@@ -50,11 +48,14 @@ export default function Faculty() {
           <h3 className="text-2xl font-semibold text-secondary mb-4">
             Clinical Team
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
             {facultyData.clinicalTeam.map((f, idx) => (
-              <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
+              <div
+                key={idx}
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center max-w-xs"
+              >
                 {f.photo && (
-                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-2">
+                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-4">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -65,17 +66,12 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <div className="space-y-2">
-                  <p className="text-lg font-semibold text-secondary">
-                    {f.name}
-                  </p>
-                  <p className="italic text-base text-neutral-grayDark">
-                    {f.role}
-                  </p>
-                  <p className="text-base text-neutral-grayDark">
-                    {f.bio}
-                  </p>
-                </div>
+                <p className="text-xl font-semibold text-secondary mb-1">{f.name}</p>
+                <p className="text-base font-medium text-secondary mb-3">{f.role}</p>
+                <p className="text-base text-neutral-grayDark leading-relaxed mb-3">{f.bio}</p>
+                {f.pronouns && (
+                  <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
+                )}
               </div>
             ))}
           </div>

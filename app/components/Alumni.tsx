@@ -15,7 +15,7 @@ export default function Alumni() {
           No alumni listed yet.
         </p>
       ) : (
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4 md:px-6">
           {cohorts.map((cohort) => (
             <div key={cohort.year}>
               <h3 className="text-2xl font-semibold text-secondary mb-4">
@@ -25,10 +25,10 @@ export default function Alumni() {
                 {cohort.alumni.map((a, idx) => (
                   <div
                     key={idx}
-                    className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center space-y-4 text-center"
+                    className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center max-w-xs mx-auto space-y-1 hover:shadow-lg hover:-translate-y-1 transform transition-transform"
                   >
                     {a.photo && (
-                      <div className="w-24 h-24 relative rounded-full overflow-hidden mx-auto">
+                      <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
                         <Image
                           src={a.photo}
                           alt={a.name}
@@ -39,25 +39,25 @@ export default function Alumni() {
                         />
                       </div>
                     )}
-                    <p className="text-lg font-semibold text-secondary">{a.name}</p>
+                    <p className="text-xl font-semibold text-secondary">{a.name}</p>
                     {a.title && (
-                      <p className="italic text-base text-neutral-grayDark">{a.title}</p>
+                      <p className="italic text-sm text-neutral-grayDark">{a.title}</p>
                     )}
                     {a.institution && (
-                      <p className="text-base text-neutral-grayDark">{a.institution}</p>
+                      <p className="text-sm text-neutral-grayDark">{a.institution}</p>
                     )}
                     {a.location && (
-                      <p className="text-base text-neutral-grayDark">{a.location}</p>
+                      <p className="text-sm text-neutral-grayDark">{a.location}</p>
                     )}
                     {a.pronouns && (
-                      <p className="text-base text-neutral-grayDark">{a.pronouns}</p>
+                      <p className="italic text-sm text-neutral-grayDark">{a.pronouns}</p>
                     )}
                     {a.link && (
                       <a
                         href={a.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary hover:text-primary-dark transition-colors"
+                        className="text-primary hover:text-primary-dark transition"
                       >
                         {a.link}
                       </a>

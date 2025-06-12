@@ -5,42 +5,49 @@
       "name": "Jenica Ryu, MD, AAHIVS",
       "role": "Program Director",
       "photo": "/images/faculty/leadership-team/jenica-ryan.png",
+      "pronouns": "She/Her",
       "bio": "Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
     },
     {
       "name": "LaShonda Spencer, MD, AAHIVS",
       "role": "Program Director",
       "photo": "/images/faculty/leadership-team/lashonda-spencer.jpeg",
+      "pronouns": "She/Her",
       "bio": "HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
     },
     {
       "name": "Revery Barnes, MD, AAHIVS",
       "role": "Associate Program Director",
       "photo": "/images/faculty/leadership-team/revery-barnes.jpg",
+      "pronouns": "He/Him",
       "bio": "HIV Clinic Director, Hubert H. Humphrey Comprehensive Health Center LA County Department of Health Services"
     },
     {
       "name": "Christian Takayama, MD, AAHIVS",
       "role": "Associate Program Director",
       "photo": "/images/faculty/leadership-team/christian-takayama.png",
+      "pronouns": "He/Him",
       "bio": "Principal Investigator, AIDS Education and Training Center (AETC) of USC Keck School of Medicine Department of Family Medicine"
     },
     {
       "name": "Shanna Livermore, MPH",
       "role": "Director of Operations",
       "photo": "/images/faculty/leadership-team/shanna-livermore.png",
+      "pronouns": "She/Her",
       "bio": "Clinic Director, Rand Schrader Infectious Disease and HIV Clinic LA General Hospital, Department of Health Services"
     },
     {
       "name": "Jerry Gates, PhD",
       "role": "Emeritus Professor of Family Medicine",
       "photo": "/images/faculty/leadership-team/jerry-gates.png",
+      "pronouns": "He/Him",
       "bio": "HIV Clinical Director, MLK Outpatient Center Director of Drew CARES, Charles R. Drew University of Medicine and Science (CDU)"
     },
     {
       "name": "Katherine Loomis, MD",
       "role": "Research & Scholarship Lead",
       "photo": "/images/faculty/leadership-team/katherine-loomis.jpeg",
+      "pronouns": "She/Her",
       "bio": "Clinical Instructor of Internal Medicine/ ID"
     }
   ],
@@ -49,55 +56,64 @@
       "name": "Eddie Sattah, MD",
       "role": "Internal Medicine / Infectious Disease",
       "photo": "/images/faculty/clinical-team/eddie-sattah.jpeg",
-      "bio": "Hepatitis C Co-Infection Lead"
+      "pronouns": "He/Him",
+      "bio": "Hepatitis C Co-Infection Lead at Rand Schrader Infectious Disease & HIV Clinic"
     },
     {
       "name": "Jessica Schneider, MD, AAHIVS",
       "role": "Medicine-Pediatrics / HIV Primary Care / Correctional Health",
       "photo": "/images/faculty/clinical-team/jessica-schneider.jpeg",
-      "bio": ""
+      "pronouns": "She/Her",
+      "bio": "Physician Specialist at MLK Outpatient Center and Oasis Clinic, Los Angeles County DHS"
     },
     {
       "name": "Gigi Simmons, MD",
       "role": "Family Medicine / Addiction Medicine",
       "photo": "/images/faculty/clinical-team/gigi-simmons.jpeg",
-      "bio": ""
+      "pronouns": "She/Her",
+      "bio": "Addiction Medicine Specialist and Family Medicine Physician at USC Health"
     },
     {
       "name": "Kevin Tangonan, DO, AAHIVS",
       "role": "Family Medicine / HIV Primary Care",
       "photo": "/images/faculty/clinical-team/kevin-tangonan.jpg",
-      "bio": ""
+      "pronouns": "He/Him",
+      "bio": "Site Medical Director at Gleicher/Chen Health Center, APLA Health"
     },
     {
       "name": "Hrishikesh Belani, MD, AAHIVS",
       "role": "Internal Medicine / HIV / Addiction Medicine",
       "photo": "/images/faculty/clinical-team/hrishikesh-belani.jpeg",
-      "bio": ""
+      "pronouns": "He/Him",
+      "bio": "Clinical Instructor in Medicine at USC Keck School, specializing in HIV and Addiction Medicine"
     },
     {
       "name": "Katherine Gardner, MD",
       "role": "Family Medicine / Gender Affirming Care",
       "photo": "/images/faculty/clinical-team/katherine-headshot.jpeg",
-      "bio": ""
+      "pronouns": "She/Her",
+      "bio": "Director of Gender Affirming Care and Family Medicine Physician at LA General Medical Center"
     },
     {
       "name": "Becca Cohen, MD, MPH, AAHIVS",
       "role": "Family Medicine / HIV Primary Care",
       "photo": "/images/faculty/clinical-team/becca-cohen.jpg",
-      "bio": ""
+      "pronouns": "She/Her",
+      "bio": "Associate Medical Director at LA Dept of Public Health, Division of HIV and STD Programs"
     },
     {
       "name": "Katya Corado, MD",
       "role": "Infectious Disease / HIV Primary Care",
       "photo": "/images/faculty/clinical-team/katya-corado.jpeg",
-      "bio": ""
+      "pronouns": "She/Her",
+      "bio": "Infectious Disease Physician and HIV Primary Care Specialist at Cedars-Sinai Medical Center"
     },
     {
       "name": "Johan Clarke, MD, AAHIVS",
       "role": "HIV Primary Care / Gender Affirming Care / Addiction Medicine",
       "photo": "/images/faculty/clinical-team/johan-clarke.png",
-      "bio": ""
+      "pronouns": "They/Them",
+      "bio": "HIV Primary Care and Gender Affirming Care Specialist at the LA LGBT Center"
     }
   ]
 }

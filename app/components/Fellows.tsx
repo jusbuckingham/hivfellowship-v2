@@ -11,11 +11,11 @@ export default function Fellows() {
       {list.length === 0 ? (
         <p className="mt-4 text-base text-neutral-grayDark">No fellows listed yet.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4 md:px-6">
           {list.map((fellow, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center space-y-4">
+            <div key={idx} className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center max-w-xs mx-auto hover:shadow-lg hover:-translate-y-1 transform transition">
               {fellow.photo && (
-                <div className="w-20 h-20 relative rounded-full overflow-hidden mx-auto">
+                <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
                   <Image
                     src={fellow.photo}
                     alt={fellow.name}
@@ -26,12 +26,12 @@ export default function Fellows() {
                   />
                 </div>
               )}
-              <p className="text-lg font-semibold text-secondary">{fellow.name}</p>
+              <p className="text-xl font-semibold text-secondary mb-1">{fellow.name}</p>
               {fellow.pronouns && (
-                <p className="text-sm text-neutral-grayDark">{fellow.pronouns}</p>
+                <p className="italic text-sm text-neutral-grayDark mb-2">{fellow.pronouns}</p>
               )}
-              <p className="text-sm text-neutral-grayDark leading-relaxed">{fellow.background}</p>
-              <p className="text-sm text-secondary-light">Year: {fellow.year}</p>
+              <p className="text-sm text-neutral-grayDark leading-relaxed mb-2">{fellow.background}</p>
+              <p className="text-sm font-medium text-primary">Year: {fellow.year}</p>
             </div>
           ))}
         </div>

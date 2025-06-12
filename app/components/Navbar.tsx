@@ -16,20 +16,20 @@ export default function Navbar({ menu }: NavbarProps) {
 
   return (
     <nav className="sticky top-0 z-50 bg-primary-dark bg-opacity-95 backdrop-blur-sm text-neutral-white border-b border-primary-dark/50">
-      <div className="container mx-auto flex flex-col items-start md:flex-row md:items-center md:justify-between px-6 py-4 space-y-4 md:space-y-0">
+      <div className="container mx-auto flex flex-col items-start md:flex-row md:items-center md:justify-between px-6 py-4 space-y-2 md:space-y-0">
         {/* Logo on the left */}
         <Link href="/" className="flex items-center space-x-2">
-          {/* Explicit 32×32px dimensions via width/height */}
+          {/* Explicit 48×48px dimensions via width/height */}
           <Image
             src="/images/menu/hiv-logo.jpg"
             alt="HIV Fellowship Logo"
-            width={32}
-            height={32}
+            width={64}
+            height={64}
             className="object-contain"
             priority
           />
           {/* If you'd like text next to the logo, uncomment below */}
-          <span className="text-xl font-semibold tracking-wide hover:text-primary-light">
+          <span className="text-2xl font-bold tracking-wide hover:text-primary-light">
             HIV Fellowship
           </span>
         </Link>
