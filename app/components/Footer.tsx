@@ -10,16 +10,16 @@ interface FooterProps {
 
 export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="bg-secondary text-neutral-white">
-      <div className="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+    <footer className="bg-secondary text-neutral-white shadow-inner border-t border-neutral-700">
+      <div className="container mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
         {/* Address & Contact */}
-        <div className="space-y-1">
+        <div className="space-y-4">
           {data.addressLines.map((line, idx) => (
-            <p key={idx} className="text-base">
+            <p key={idx} className="text-base mb-1">
               {line}
             </p>
           ))}
-          <p className="mt-2 text-base">
+          <p className="mt-2 text-base mb-1">
             <span className="font-semibold">Phone:</span>{" "}
             <a
               href={`tel:${data.contact.phone}`}
@@ -28,7 +28,7 @@ export default function Footer({ data }: FooterProps) {
               {data.contact.phone}
             </a>
           </p>
-          <p className="text-base">
+          <p className="text-base mb-1">
             <span className="font-semibold">Email:</span>{" "}
             <a
               href={`mailto:${data.contact.email}`}
@@ -41,8 +41,8 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Social Links */}
         <div className="space-y-2">
-          <h4 className="text-lg font-semibold">Follow Us</h4>
-          <ul className="flex space-x-4">
+          <h4 className="text-lg font-bold tracking-wide uppercase mb-2">Follow Us</h4>
+          <ul className="flex space-x-4 space-y-2">
             {data.social.map((s) => (
               <li key={s.platform}>
                 <a
@@ -60,8 +60,8 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Quick Links */}
         <div className="space-y-2">
-          <h4 className="text-lg font-semibold">Quick Links</h4>
-          <ul className="space-y-1">
+          <h4 className="text-lg font-bold tracking-wide uppercase mb-2">Quick Links</h4>
+          <ul className="space-y-2">
             <li>
               <Link href="/privacy" className="text-neutral-white hover:text-accent transition-colors">
                 Privacy Policy

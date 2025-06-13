@@ -19,10 +19,10 @@ export default function Partners() {
           {list.map((p, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg shadow p-4 flex flex-col items-center text-center max-w-xs mx-auto space-y-2 hover:shadow-lg transform transition-transform duration-200"
+              className="bg-white rounded-lg shadow p-5 flex flex-col items-center text-center max-w-xs mx-auto space-y-2 hover:shadow-lg transform transition-transform duration-200"
             >
               {p.logo && (
-                <div className="w-24 h-24 relative overflow-hidden mb-4">
+                <div className="w-28 h-28 relative overflow-hidden mb-3 rounded border border-neutral-200">
                   <Image
                     src={p.logo}
                     alt={`${p.name} logo`}
@@ -44,7 +44,7 @@ export default function Partners() {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary text-sm hover:underline transition"
+                  className="text-primary text-xs hover:underline transition"
                 >
                   {p.link}
                 </a>

@@ -16,20 +16,27 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <head>
-        {/* Favicon */}
+        <title>HIV Clinical Leadership Fellowship</title>
+        <meta name="description" content="An academic and clinical HIV fellowship program for future leaders in care and research." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <link
           rel="icon"
-          href="/images/home/hiv-logo.jpg"
+          href="/images/menu/hiv-logo.jpg"
           type="image/jpeg"
         />
-        {/* Alternatively, if you convert your logo to a .png or .ico, you can adjust the type accordingly */}
       </head>
       <body className="flex flex-col min-h-screen bg-neutral-grayLight">
-        <Navbar menu={menuData} />
+        <header>
+          <Navbar menu={menuData} />
+        </header>
         <main className="flex-grow">
           {children}
         </main>
-        <Footer data={footerData} />
+        <footer>
+          <Footer data={footerData} />
+        </footer>
       </body>
     </html>
   );

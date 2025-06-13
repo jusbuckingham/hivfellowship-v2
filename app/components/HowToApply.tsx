@@ -3,20 +3,20 @@ import applyData from "../../data/howToApply.json";
 
 export default function HowToApply() {
   return (
-    <section id="how-to-apply" className="py-16 bg-neutral-white">
+    <section id="how-to-apply" className="py-12 bg-neutral-white">
       <div className="container mx-auto px-4 space-y-6">
         {/* Section Title */}
-        <h2 className="section-title text-3xl md:text-4xl text-secondary">
+        <h2 className="section-title text-3xl md:text-4xl text-secondary font-bold mb-6">
           {applyData.sectionTitle || "How to Apply"}
         </h2>
 
         {/* Deadline */}
-        <p className="mt-4 text-lg text-neutral-grayDark">
+        <p className="mt-4 mb-4 text-lg text-neutral-grayDark">
           {applyData.deadline}
         </p>
 
         {/* Eligibility */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           {applyData.eligibility.map((elig, idx) => (
             <p key={idx} className="text-lg text-neutral-grayDark leading-relaxed">
               {elig}
@@ -29,7 +29,7 @@ export default function HowToApply() {
           <h3 className="text-2xl font-semibold text-secondary mt-6">
             Application Requirements
           </h3>
-          <ul className="list-disc list-inside mt-2 space-y-1 text-base md:text-lg text-neutral-grayDark leading-relaxed">
+          <ul className="list-disc list-inside mt-2 space-y-1 text-lg text-neutral-grayDark leading-relaxed">
             {applyData.requiredDocuments.map((doc, idx) => (
               <li key={idx}>
                 {doc.link ? (
@@ -50,7 +50,7 @@ export default function HowToApply() {
         </div>
 
         {/* Submission Instructions */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           <p className="text-lg text-neutral-grayDark leading-relaxed">
             {applyData.contactInfo.instructions}
           </p>

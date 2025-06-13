@@ -4,32 +4,54 @@
 import { useState, useEffect } from "react";
 import carouselData from "../../data/carousel.json";
 
+const images =
+  Array.isArray(carouselData.images) && carouselData.images.length > 0
+    ? carouselData.images
+    : ["/images/alumni/earl-gerald.jpeg"];
+
 export default function Carousel() {
   // Safely grab image URLs
-  const images = Array.isArray(carouselData.images) ? carouselData.images : [];
+  // const images = Array.isArray(carouselData.images) ? carouselData.images : [];
   const [current, setCurrent] = useState(0);
 
   // Auto-advance every 5 seconds
   useEffect(() => {
-    if (images.length === 0) return;
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
-  // If no images, render nothing
-  if (images.length === 0) return null;
+  // If no images, render fallback message
+  if (images.length === 0)
+    return (
+      <div className="w-full mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
+        <div
+          className="relative w-full max-w-2xl bg-neutral-grayLight rounded-lg overflow-hidden h-64 md:h-80 min-h-[16rem] flex items-center justify-center border border-neutral-300"
+        >
+          <span className="text-red-600 font-semibold">
+            No images available for carousel.
+          </span>
+        </div>
+      </div>
+    );
 
   return (
-    <div className="w-full mb-8 px-6 md:px-8 flex justify-center">
+    <div className="w-full mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
       {/* Slide card */}
-      <div className="relative w-full max-w-screen-lg bg-neutral-grayLight rounded-lg overflow-hidden h-48 md:h-64">
-        <img
-          src={images[current]}
-          alt={`Slide ${current + 1}`}
-          className="w-full h-full object-cover"
-        />
+      <div className="relative w-full max-w-lg aspect-[4/3] bg-neutral-grayLight rounded-lg overflow-hidden shadow-md border border-neutral-200 p-2">
+        {images.map((src, idx) => (
+          <img
+            key={idx}
+            src={src}
+            alt={`Carousel image ${idx + 1}`}
+            onError={() => console.error("Image failed to load:", src)}
+            aria-hidden={idx !== current}
+            className={`absolute top-0 left-0 w-full h-full object-cover object-center transition-opacity duration-700 ease-in-out ${
+              idx === current ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
 
         {/* Prev button */}
         <button

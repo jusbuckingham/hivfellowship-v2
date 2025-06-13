@@ -18,23 +18,23 @@ export default function Faculty() {
             {facultyData.leadershipTeam.map((f, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center max-w-xs"
+                className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center max-w-xs"
               >
                 {f.photo && (
-                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-4">
+                  <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
                     <Image
                       src={f.photo}
                       alt={f.name}
-                      width={64}
-                      height={64}
+                      width={96}
+                      height={96}
                       className="rounded-full object-cover"
                       priority
                     />
                   </div>
                 )}
-                <p className="text-xl font-semibold text-secondary mb-1">{f.name}</p>
-                <p className="text-base font-medium text-secondary mb-3">{f.role}</p>
-                <p className="text-base text-neutral-grayDark leading-relaxed mb-3">{f.bio}</p>
+                <p className="text-xl font-semibold text-secondary mb-0.5">{f.name}</p>
+                <p className="text-base font-medium text-secondary mb-1.5">{f.role}</p>
+                <p className="text-base text-neutral-grayDark leading-relaxed mb-2">{f.bio}</p>
                 {f.pronouns && (
                   <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
                 )}
@@ -52,23 +52,23 @@ export default function Faculty() {
             {facultyData.clinicalTeam.map((f, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center max-w-xs"
+                className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center max-w-xs"
               >
                 {f.photo && (
-                  <div className="w-20 h-20 relative rounded-full overflow-hidden mb-4">
+                  <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
                     <Image
                       src={f.photo}
                       alt={f.name}
-                      width={64}
-                      height={64}
+                      width={96}
+                      height={96}
                       className="rounded-full object-cover"
                       priority
                     />
                   </div>
                 )}
-                <p className="text-xl font-semibold text-secondary mb-1">{f.name}</p>
-                <p className="text-base font-medium text-secondary mb-3">{f.role}</p>
-                <p className="text-base text-neutral-grayDark leading-relaxed mb-3">{f.bio}</p>
+                <p className="text-xl font-semibold text-secondary mb-0.5">{f.name}</p>
+                <p className="text-base font-medium text-secondary mb-1.5">{f.role}</p>
+                <p className="text-base text-neutral-grayDark leading-relaxed mb-2">{f.bio}</p>
                 {f.pronouns && (
                   <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
                 )}

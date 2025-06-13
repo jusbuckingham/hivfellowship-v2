@@ -5,7 +5,7 @@ import uniqueData from "../../data/unique.json";
 export default function Unique() {
   return (
     <Accordion title={uniqueData.sectionTitle}>
-      <ul className="list-disc list-inside mt-6 space-y-2 text-base md:text-lg text-neutral-grayDark leading-relaxed">
+      <ul className="list-disc pl-5 mt-6 space-y-3 text-base text-neutral-grayDark leading-relaxed">
         {uniqueData.bullets.map((item, idx) => (
           <li key={idx}>{item}</li>
         ))}
