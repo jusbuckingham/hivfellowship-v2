@@ -25,7 +25,7 @@ export default function Carousel() {
   // If no images, render fallback message
   if (images.length === 0)
     return (
-      <div className="w-full mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
+      <div className="w-full max-w-4xl mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
         <div
           className="relative w-full max-w-2xl bg-neutral-grayLight rounded-lg overflow-hidden h-64 md:h-80 min-h-[16rem] flex items-center justify-center border border-neutral-300"
         >
@@ -37,9 +37,9 @@ export default function Carousel() {
     );
 
   return (
-    <div className="w-full mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
+    <div className="w-full max-w-4xl mb-10 px-6 sm:px-10 md:px-16 flex justify-center">
       {/* Slide card */}
-      <div className="relative w-full max-w-lg aspect-[4/3] bg-neutral-grayLight rounded-lg overflow-hidden shadow-md border border-neutral-200 p-2">
+      <div className="relative w-full max-w-sm aspect-[16/9] bg-neutral-grayLight rounded-lg overflow-hidden shadow-md border border-neutral-200 p-2">
         {images.map((src, idx) => (
           <img
             key={idx}

@@ -10,10 +10,10 @@ interface FooterProps {
 
 export default function Footer({ data }: FooterProps) {
   return (
-    <footer className="bg-secondary text-neutral-white shadow-inner border-t border-neutral-700">
+    <footer className="bg-gradient-to-r from-secondary via-neutral-800 to-secondary text-neutral-white shadow-inner border-t border-neutral-700">
       <div className="container mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
         {/* Address & Contact */}
-        <div className="space-y-4">
+        <div className="space-y-4 text-sm md:text-base leading-relaxed">
           {data.addressLines.map((line, idx) => (
             <p key={idx} className="text-base mb-1">
               {line}
@@ -41,15 +41,15 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Social Links */}
         <div className="space-y-2">
-          <h4 className="text-lg font-bold tracking-wide uppercase mb-2">Follow Us</h4>
-          <ul className="flex space-x-4 space-y-2">
+          <h4 className="text-xl font-extrabold tracking-wide text-accent mb-4">Follow Us</h4>
+          <ul className="flex space-x-4">
             {data.social.map((s) => (
               <li key={s.platform}>
                 <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-white hover:text-accent transition-colors"
+                  className="bg-accent hover:bg-opacity-80 text-white px-3 py-1 rounded-full text-sm transition-all"
                 >
                   {s.platform}
                 </a>
@@ -60,7 +60,7 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Quick Links */}
         <div className="space-y-2">
-          <h4 className="text-lg font-bold tracking-wide uppercase mb-2">Quick Links</h4>
+          <h4 className="text-xl font-extrabold tracking-wide text-accent mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
               <Link href="/privacy" className="text-neutral-white hover:text-accent transition-colors">
@@ -77,7 +77,7 @@ export default function Footer({ data }: FooterProps) {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-neutral-gray text-center py-4 text-sm text-neutral-grayDark">
+      <div className="border-t border-neutral-gray text-center py-6 text-sm text-neutral-white bg-neutral-900">
         © {new Date().getFullYear()} HIV Fellowship. All rights reserved.
       </div>
     </footer>

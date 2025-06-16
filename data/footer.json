@@ -4,11 +4,10 @@
     "1000 S. Fremont Ave. Unit 22, Building A-7, 4th Floor Alhambra, CA 91803"
   ],
   "contact": {
-    "phone": "(401) XXX-XXXX",
+    "phone": "(555) 555-5555",
     "email": "shanna.livermore@med.usc.edu"
   },
   "social": [
-    { "platform": "Instagram", "href": "https://facebook.com/ribhiv" },
-    { "platform": "X",  "href": "https://twitter.com/ribhiv" }
+    { "platform": "Instagram", "href": "https://facebook.com/ribhiv" }
   ]
 }

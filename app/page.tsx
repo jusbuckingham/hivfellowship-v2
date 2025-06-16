@@ -17,7 +17,6 @@ export default function HomePage() {
       {/* Top carousel and video section */}
       <div className="px-4 md:px-8 pt-8 space-y-12">
         <Carousel />
-        <VideoEmbed />
       </div>
 
       {/* Main content sections */}
@@ -65,6 +64,11 @@ export default function HomePage() {
         <section>
           <div className="border-t border-neutral-300 pt-16">
             <HowToApply />
+          </div>
+        </section>
+        <section>
+          <div className="border-t border-neutral-300 pt-16">
+            <VideoEmbed />
           </div>
         </section>
       </div>
