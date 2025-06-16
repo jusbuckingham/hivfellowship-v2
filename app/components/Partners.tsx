@@ -15,40 +15,35 @@ export default function Partners() {
           No partners listed yet.
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-4 md:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8 px-6 md:px-12">
           {list.map((p, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-lg shadow p-5 flex flex-col items-center text-center max-w-xs mx-auto space-y-2 hover:shadow-lg transform transition-transform duration-200"
-            >
-              {p.logo && (
-                <div className="w-28 h-28 relative overflow-hidden mb-3 rounded border border-neutral-200">
-                  <Image
-                    src={p.logo}
-                    alt={`${p.name} logo`}
-                    width={96}
-                    height={96}
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-              )}
-              <p className="text-xl font-semibold text-secondary mb-1">
-                {p.name}
-              </p>
-              <p className="text-sm text-neutral-grayDark leading-relaxed mb-2">
-                {p.description}
-              </p>
-              {p.link && (
-                <a
-                  href={p.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary text-xs hover:underline transition"
-                >
-                  {p.link}
-                </a>
-              )}
+            <div key={idx} className="border-b border-neutral-300 pb-6 mb-6">
+              <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center space-y-2 hover:shadow-lg transition duration-300">
+                {p.logo && (
+                  <div className="w-24 h-24 relative overflow-hidden rounded-md border border-neutral-200">
+                    <Image
+                      src={p.logo}
+                      alt={`${p.name} logo`}
+                      width={96}
+                      height={96}
+                      className="rounded object-contain mb-2"
+                      priority
+                    />
+                  </div>
+                )}
+                <p className="text-lg font-bold text-secondary">{p.name}</p>
+                <p className="text-sm text-neutral-grayDark">{p.description}</p>
+                {p.link && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline"
+                  >
+                    Visit Website
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>

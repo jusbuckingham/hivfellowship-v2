@@ -18,10 +18,10 @@ export default function Faculty() {
             {facultyData.leadershipTeam.map((f, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center max-w-xs"
+                className="border border-gray-200 rounded-lg p-4 bg-white shadow-sm flex flex-col items-center text-center space-y-2 hover:shadow-md transition-shadow duration-300 w-full max-w-sm"
               >
                 {f.photo && (
-                  <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
+                  <div className="w-28 h-28 relative rounded-full overflow-hidden">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -32,11 +32,11 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <p className="text-xl font-semibold text-secondary mb-0.5">{f.name}</p>
-                <p className="text-base font-medium text-secondary mb-1.5">{f.role}</p>
-                <p className="text-base text-neutral-grayDark leading-relaxed mb-2">{f.bio}</p>
+                <p className="text-lg font-semibold text-secondary">{f.name}</p>
+                <p className="text-sm font-medium text-neutral-700">{f.role}</p>
+                <p className="text-sm text-neutral-600">{f.bio}</p>
                 {f.pronouns && (
-                  <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
+                  <p className="text-xs italic text-neutral-500">({f.pronouns})</p>
                 )}
               </div>
             ))}
@@ -52,10 +52,10 @@ export default function Faculty() {
             {facultyData.clinicalTeam.map((f, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center text-center max-w-xs"
+                className="border border-gray-200 rounded-lg p-4 bg-white shadow-sm flex flex-col items-center text-center space-y-2 hover:shadow-md transition-shadow duration-300 w-full max-w-sm"
               >
                 {f.photo && (
-                  <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
+                  <div className="w-28 h-28 relative rounded-full overflow-hidden">
                     <Image
                       src={f.photo}
                       alt={f.name}
@@ -66,11 +66,11 @@ export default function Faculty() {
                     />
                   </div>
                 )}
-                <p className="text-xl font-semibold text-secondary mb-0.5">{f.name}</p>
-                <p className="text-base font-medium text-secondary mb-1.5">{f.role}</p>
-                <p className="text-base text-neutral-grayDark leading-relaxed mb-2">{f.bio}</p>
+                <p className="text-lg font-semibold text-secondary">{f.name}</p>
+                <p className="text-sm font-medium text-neutral-700">{f.role}</p>
+                <p className="text-sm text-neutral-600">{f.bio}</p>
                 {f.pronouns && (
-                  <p className="text-sm italic text-neutral-grayDark">({f.pronouns})</p>
+                  <p className="text-xs italic text-neutral-500">({f.pronouns})</p>
                 )}
               </div>
             ))}
