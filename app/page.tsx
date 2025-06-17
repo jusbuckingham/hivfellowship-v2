@@ -11,66 +11,35 @@ import Alumni from "./components/Alumni";
 import Partners from "./components/Partners";
 import HowToApply from "./components/HowToApply";
 
+// New internal Section wrapper for consistent layout
+const Section = ({ children }: { children: React.ReactNode }) => (
+  <section>
+    <div className="border-t border-neutral-300 pt-16">
+      {children}
+    </div>
+  </section>
+);
+
 export default function HomePage() {
   return (
     <main className="bg-neutral-grayLight min-h-screen text-neutral-800">
-      {/* Top carousel and video section */}
+      {/* Top carousel */}
       <div className="px-4 md:px-8 pt-8 space-y-12">
         <Carousel />
       </div>
 
       {/* Main content sections */}
       <div className="container mx-auto px-4 md:px-8 py-16 space-y-24">
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Overview />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <ClinicalCenters />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Program />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Unique />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Faculty />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Fellows />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Alumni />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <Partners />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <HowToApply />
-          </div>
-        </section>
-        <section>
-          <div className="border-t border-neutral-300 pt-16">
-            <VideoEmbed />
-          </div>
-        </section>
+        <Section><Overview /></Section>
+        <Section><ClinicalCenters /></Section>
+        <Section><Program /></Section>
+        <Section><Unique /></Section>
+        <Section><Faculty /></Section>
+        <Section><Fellows /></Section>
+        <Section><Alumni /></Section>
+        <Section><Partners /></Section>
+        <Section><HowToApply /></Section>
+        <Section><VideoEmbed /></Section>
       </div>
     </main>
   );

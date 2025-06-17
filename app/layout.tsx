@@ -1,6 +1,14 @@
 // app/layout.tsx
 import "../styles/globals.css";
 import type { ReactNode } from "react";
+export const metadata = {
+  title: "HIV Clinical Leadership Fellowship",
+  description: "An academic and clinical HIV fellowship program for future leaders in care and research.",
+  viewport: "width=device-width, initial-scale=1",
+  icons: {
+    icon: "/images/menu/hiv-logo.jpg",
+  },
+};
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -15,26 +23,14 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <head>
-        <title>HIV Clinical Leadership Fellowship</title>
-        <meta name="description" content="An academic and clinical HIV fellowship program for future leaders in care and research." />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-        <link
-          rel="icon"
-          href="/images/menu/hiv-logo.jpg"
-          type="image/jpeg"
-        />
-      </head>
       <body className="flex flex-col min-h-screen bg-neutral-grayLight">
         <header>
           <Navbar menu={menuData} />
         </header>
-        <main className="flex-grow">
+        <main className="flex-grow px-4 md:px-12 lg:px-24 py-8">
           {children}
         </main>
-        <footer>
+        <footer className="mt-8 border-t border-neutral-300 pt-6">
           <Footer data={footerData} />
         </footer>
       </body>
