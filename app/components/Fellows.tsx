@@ -11,11 +11,11 @@ export default function Fellows() {
       {list.length === 0 ? (
         <p className="mt-4 text-base text-neutral-grayDark">No fellows listed yet.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6 px-4 md:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6 px-4 md:px-8 divide-y divide-neutral-200 sm:divide-none">
           {list.map((fellow, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 border border-neutral-200"
             >
               {fellow.photo && (
                 <div className="w-24 h-24 relative rounded-full overflow-hidden mb-4">
