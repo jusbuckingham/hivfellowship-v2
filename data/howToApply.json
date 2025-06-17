@@ -1,17 +1,17 @@
 {
   "sectionTitle": "How to Apply",
-  "deadline": "Applications are due by September 15.",
+  "deadline": "Applications are due by September 15, 2025.",
   "eligibility": [
-    "U.S. citizen or permanent resident",
-    "Completed internal medicine, family medicine, med-peds, or infectious diseases fellowship before start (July–June)"
+    "Applicants must be U.S. citizens or permanent residents.",
+    "Must have completed training in internal medicine, family medicine, med-peds, or infectious diseases by the fellowship start date (July 1, 2025)."
   ],
   "requiredDocuments": [
     {
-      "label": "HIV Clinical Leadership Fellowship Application Form",
+      "label": "Completed online application form",
       "link": "https://docs.google.com/forms/d/1GMSQXZOlZGOeIpS9x5HphmJvW1ysE100_v8grsacItw/viewform?edit_requested=true"
     },
     {
-      "label": "One-page letter of interest to Shanna Livermore, Program Director",
+      "label": "One-page personal statement explaining your interest in the fellowship",
       "link": null
     },
     {
@@ -19,13 +19,13 @@
       "link": null
     },
     {
-      "label": "2–3 Letters of Recommendation (one must be from your program director)",
+      "label": "Two to three letters of recommendation (one from current program director)",
       "link": null
     }
   ],
   "contactInfo": {
     "email": "shanna.livermore@med.usc.edu",
-    "instructions": "Email your complete application package to Shanna Livermore at shanna.livermore@med.usc.edu. If recommenders send letters directly, please CC the applicant’s name.",
-    "generalInquiries": "For questions, contact Shanna Livermore at shanna.livermore@med.usc.edu."
+    "instructions": "Submit all application materials by email to Shanna Livermore at shanna.livermore@med.usc.edu. If letters are sent separately by recommenders, please ensure the applicant’s name is included in the email.",
+    "generalInquiries": "For general questions, contact Shanna Livermore at shanna.livermore@med.usc.edu."
   }
 }
