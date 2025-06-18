@@ -3,17 +3,22 @@ import overviewData from "../../data/overview.json";
 
 export default function Overview() {
   return (
-    <section id="overview" className="py-12 bg-neutral-white">
-      <div className="container mx-auto px-4 space-y-6">
+    <section id="overview" className="py-16 bg-neutral-white">
+      <div className="container mx-auto px-6 space-y-10">
         {/* Header */}
-        <h2 className="section-title text-3xl md:text-4xl text-secondary font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-secondary border-b pb-4 border-neutral-light">
           {overviewData.sectionTitle}
         </h2>
 
         {/* About the Program paragraphs */}
-        <div className="mt-6 space-y-3 text-lg text-neutral-grayDark leading-relaxed">
+        <div className="grid gap-6 max-w-3xl">
           {overviewData.aboutProgram.map((line, idx) => (
-            <p key={idx}>{line}</p>
+            <div
+              key={idx}
+              className="bg-neutral-100 p-6 rounded-md shadow-sm text-neutral-grayDark text-base leading-relaxed"
+            >
+              {line}
+            </div>
           ))}
         </div>
       </div>

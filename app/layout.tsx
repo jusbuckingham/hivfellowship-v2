@@ -22,17 +22,20 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
+      <head />
       <body className="flex flex-col min-h-screen bg-neutral-grayLight">
-        <header>
-          <Navbar menu={menuData} />
-        </header>
-        <main className="flex-grow px-4 md:px-12 lg:px-24 py-8">
-          {children}
-        </main>
-        <footer className="mt-8 border-t border-neutral-300 pt-6">
-          <Footer data={footerData} />
-        </footer>
+        <div id="__next" className="flex flex-col min-h-screen">
+          <header>
+            <Navbar menu={menuData} />
+          </header>
+          <main className="flex-grow px-4 md:px-12 lg:px-24 py-8">
+            {children}
+          </main>
+          <footer className="mt-8 border-t border-neutral-300 pt-6">
+            <Footer data={footerData} />
+          </footer>
+        </div>
       </body>
     </html>
   );

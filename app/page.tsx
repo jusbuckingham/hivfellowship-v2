@@ -22,25 +22,27 @@ const Section = ({ children }: { children: React.ReactNode }) => (
 
 export default function HomePage() {
   return (
-    <main className="bg-neutral-grayLight min-h-screen text-neutral-800">
-      {/* Top carousel */}
-      <div className="px-4 md:px-8 pt-8 space-y-12">
-        <Carousel />
-      </div>
+    <div id="__next">
+      <main className="bg-neutral-grayLight min-h-screen text-neutral-800">
+        {/* Top carousel */}
+        <div className="px-4 md:px-8 pt-8 space-y-12">
+          <Carousel />
+        </div>
 
-      {/* Main content sections */}
-      <div className="container mx-auto px-4 md:px-8 py-16 space-y-24">
-        <Section><Overview /></Section>
-        <Section><ClinicalCenters /></Section>
-        <Section><Program /></Section>
-        <Section><Unique /></Section>
-        <Section><Faculty /></Section>
-        <Section><Fellows /></Section>
-        <Section><Alumni /></Section>
-        <Section><Partners /></Section>
-        <Section><HowToApply /></Section>
-        <Section><VideoEmbed /></Section>
-      </div>
-    </main>
+        {/* Main content sections */}
+        <div className="container mx-auto px-4 md:px-8 py-16 space-y-24">
+          <Section><Overview /></Section>
+          <Section><ClinicalCenters /></Section>
+          <Section><Program /></Section>
+          <Section><Unique /></Section>
+          <Section><Faculty /></Section>
+          <Section><Fellows /></Section>
+          <Section><Alumni /></Section>
+          <Section><Partners /></Section>
+          <Section><HowToApply /></Section>
+          <Section><VideoEmbed /></Section>
+        </div>
+      </main>
+    </div>
   );
 }
