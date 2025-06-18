@@ -1,10 +1,22 @@
 [
   {
-    "label": "Program Brochure",
-    "href": "/docs/fellowship-brochure.pdf"
+    "label": "AAHIVM Credentialing Information",
+    "href": "https://aahivm.org/credentialing/"
   },
   {
-    "label": "Application Guidelines",
-    "href": "https://docs.google.com/forms/d/1GMSQXZOlZGOeIpS9x5HphmJvW1ysE100_v8grsacItw/viewform?edit_requested=true"
+    "label": "AAHIVM Fellowship Program Listing",
+    "href": "https://aahivm.org/fellowship-directory/"
+  },
+  {
+    "label": "AETC National HIV Curriculum",
+    "href": "https://www.hiv.uw.edu/"
+  },
+  {
+    "label": "HIV Clinical Pathway for Fellows",
+    "href": "https://aidsetc.org/clinical-pathway"
+  },
+  {
+    "label": "PEPFAR Fellowship Opportunities",
+    "href": "https://www.pepfar.gov/"
   }
 ]

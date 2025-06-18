@@ -1,8 +1,8 @@
 // app/components/Footer.tsx
 "use client";
 
-import Link from "next/link";
 import type { FooterData } from "../../types/FooterData";
+import resources from "@/data/resources.json";
 
 interface FooterProps {
   data: FooterData;
@@ -60,18 +60,20 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Quick Links */}
         <div className="space-y-2">
-          <h4 className="text-xl font-extrabold tracking-wide text-accent mb-4">Quick Links</h4>
+          <h4 className="text-xl font-extrabold tracking-wide text-accent mb-4">Resources</h4>
           <ul className="space-y-2">
-            <li>
-              <Link href="/privacy" className="text-neutral-white hover:text-accent transition-colors">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="text-neutral-white hover:text-accent transition-colors">
-                Terms of Service
-              </Link>
-            </li>
+            {resources.map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-white hover:text-accent transition-colors"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
